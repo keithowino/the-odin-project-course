@@ -26,6 +26,9 @@ footer {
   text-transform: uppercase;
   text-align: center; }
 
+.l-row-wrapper {
+  margin-top: 3%; }
+
 .m-footnote-site-title-ref, .m-parent-site-ref {
   text-decoration: none;
   text-transform: capitalize; }
