@@ -1,6 +1,6 @@
 "use strict";
 
-const appName = "app name";
+const appName = "odin recipes";
 
 document.title = appName.toUpperCase();
 
