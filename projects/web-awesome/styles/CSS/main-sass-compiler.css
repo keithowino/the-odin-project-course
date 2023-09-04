@@ -4,7 +4,36 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #eee; }
+  background-color: #fff; }
+
+header {
+  background-color: #1f2937; }
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.nav-brand {
+  margin-right: auto; }
+
+.app-title {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 24px;
+  color: #f9faf8; }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin: 0.1em 0 0; }
+
+.nav-link-a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #e5e7eb;
+  margin-right: 1em;
+  margin-left: 1em; }
 
 footer {
   position: fixed;
@@ -12,7 +41,7 @@ footer {
   right: 0;
   bottom: 0;
   height: 3em;
-  background-color: #222; }
+  background-color: #1f2937; }
 
 #footnote-wrapper {
   display: flex; }
