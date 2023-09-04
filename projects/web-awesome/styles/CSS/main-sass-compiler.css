@@ -9,6 +9,31 @@ body {
 header {
   background-color: #1f2937; }
 
+.hero-main {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 700; }
+
+.hero-text {
+  font-size: 18px;
+  color: #e5e7eb; }
+
+.hero-img-placeholder {
+  font-size: 18px;
+  color: #e5e7eb;
+  background-color: #ffffff68;
+  text-align: center;
+  padding: 6em 0; }
+
+.header-row-one {
+  padding: 1em 0; }
+
+.header-row-two {
+  margin-top: 5em; }
+
+.sub-header-row-two {
+  margin-bottom: 5em; }
+
 .nav-items {
   display: flex;
   align-items: center;
@@ -21,7 +46,8 @@ header {
   text-decoration: none;
   text-transform: capitalize;
   font-size: 24px;
-  color: #f9faf8; }
+  color: #f9faf8;
+  font-weight: 700; }
 
 .nav-links {
   display: flex;
@@ -55,5 +81,11 @@ footer {
   text-transform: capitalize; }
   .m-footnote-site-title-ref:hover, .m-parent-site-ref:hover {
     color: white; }
+
+.hero-sign-up-btn {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 700; }
 
 /*# sourceMappingURL=main-sass-compiler.css.map */
