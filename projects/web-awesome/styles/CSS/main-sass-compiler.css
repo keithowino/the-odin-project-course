@@ -6,6 +6,9 @@
 body {
   background-color: #fff; }
 
+main {
+  margin-bottom: 3em; }
+
 header {
   background-color: #1f2937; }
 
@@ -61,6 +64,72 @@ header {
   margin-right: 1em;
   margin-left: 1em; }
 
+.random-info-title {
+  color: #1f2937;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 3em; }
+
+.blank-img-placeholder {
+  height: 150px;
+  width: 150px;
+  border: 0.3em solid #3882f6;
+  border-radius: 0.6em;
+  margin: auto; }
+
+.illustration-text {
+  text-align: center;
+  color: #1f2937;
+  width: 90%;
+  padding-left: 1em; }
+
+.illustrations-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3% 10%; }
+
+.testimonial-section {
+  background-color: #e5e7eb; }
+
+.testimonial-text {
+  color: #1f2937;
+  font-size: 36px;
+  font-style: italic; }
+
+.client {
+  text-align: right;
+  color: #1f2937;
+  font-weight: 700;
+  font-size: 24px; }
+
+.quote {
+  margin: 6em 5em; }
+
+.call-to-action-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 2em 5em; }
+
+.call-to-action-container {
+  background-color: #3882f6;
+  margin: 5em auto;
+  border-radius: 0.6em; }
+
+.call-to-action-title {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700; }
+
+.sign-up-ref-text {
+  color: #e5e7eb;
+  font-size: 18px; }
+
+.sign-up-message {
+  margin-right: auto; }
+
 footer {
   position: fixed;
   left: 0;
@@ -87,5 +156,20 @@ footer {
   text-transform: capitalize;
   font-size: 18px;
   font-weight: 700; }
+
+.call-to-action-btn {
+  border: 0.2em solid #fff;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 50%; }
+  .call-to-action-btn:hover {
+    background-color: #1f2937;
+    color: #e5e7eb; }
+
+.call-to-action-btn-wrapper {
+  display: flex;
+  align-items: center; }
 
 /*# sourceMappingURL=main-sass-compiler.css.map */
