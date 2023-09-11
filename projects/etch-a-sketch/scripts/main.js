@@ -22,6 +22,7 @@ $(function() {
 });
 
 let color = 'black';
+const click = false;
 
 const input = document.querySelector('.js-dimension');
 const inputDimensionsElement = document.querySelector('.js-submit-dimensions');
@@ -36,6 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
             dimensions();
         };
     })
+
+    // TODO:
+    // document.querySelector('body').addEventListener('click', (e) => {
+    //     if(e.target.tagName !== 'BUTTON'){
+    //         click = !click;
+    //     };
+    // })
 });
 
 function grid(size){
@@ -84,6 +92,15 @@ function setColor(colorChoice){
 };
 
 function colorDivision(){
+    // TODO: 
+    // if(click){
+    //     if(color === 'random'){
+    //         this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    //     }else{
+    //         this.style.backgroundColor = 'black';
+    //     };
+    // };
+
     if(color === 'random'){
         this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
     }else{
