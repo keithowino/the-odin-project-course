@@ -12,7 +12,22 @@ body {
   text-align: center; }
 
 main {
-  margin-bottom: 3em; }
+  margin-bottom: 4em; }
+
+.grid {
+  width: 500px;
+  display: block;
+  margin: auto; }
+
+.selection, .category {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.grid-body {
+  height: 500px;
+  border: 0.2em solid #000;
+  margin: 2.5% auto; }
 
 footer {
   position: fixed;
@@ -34,5 +49,9 @@ footer {
   text-transform: capitalize; }
   .m-footnote-site-title-ref:hover, .m-parent-site-ref:hover {
     color: white; }
+
+.mb-size {
+  text-transform: capitalize;
+  font-weight: 700; }
 
 /*# sourceMappingURL=main-sass-compiler.css.map */
