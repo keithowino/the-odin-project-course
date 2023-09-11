@@ -7,7 +7,6 @@ body {
   background-color: #eee; }
 
 .l-s-t-s {
-  line-height: 4em;
   text-transform: uppercase;
   text-align: center; }
 
@@ -19,15 +18,21 @@ main {
   display: block;
   margin: auto; }
 
-.selection, .category {
+.selection {
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
 
-.grid-body {
+.category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+#grid-body {
   height: 500px;
   border: 0.2em solid #000;
-  margin: 2.5% auto; }
+  margin: 1.5% auto;
+  display: grid; }
 
 footer {
   position: fixed;
