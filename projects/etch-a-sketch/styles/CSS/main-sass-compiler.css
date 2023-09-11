@@ -29,10 +29,17 @@ main {
   align-items: center; }
 
 #grid-body {
-  height: 500px;
+  height: 400px;
   border: 0.2em solid #000;
   margin: 1.5% auto;
   display: grid; }
+
+.l-bot-response {
+  text-align: center;
+  margin-top: 0.4em;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #fff; }
 
 footer {
   position: fixed;
@@ -58,5 +65,8 @@ footer {
 .mb-size {
   text-transform: capitalize;
   font-weight: 700; }
+
+.mi-dimension {
+  width: 200px; }
 
 /*# sourceMappingURL=main-sass-compiler.css.map */

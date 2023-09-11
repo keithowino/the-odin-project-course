@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 const appName = "etch a sketch";
 
@@ -17,8 +17,25 @@ TODO:   PSEUDOCODE
 
 */ 
 
+$(function() {
+    $("form").submit(function() { return false; });
+});
+
+let color = 'black';
+
+const input = document.querySelector('.js-dimension');
+const inputDimensionsElement = document.querySelector('.js-submit-dimensions');
+const BotResponseElement = document.querySelector('.js-bot-response');
+
+const resetDivisionBgElement = document.querySelector('.js-reset-divisions-bg');
+
 document.addEventListener('DOMContentLoaded', () => {
-    grid(3);
+    inputDimensionsElement.addEventListener('click', dimensions);
+    input.addEventListener('keydown', (e) => {
+        if(e.code === 'Enter' || e.code === 'Space'){
+            dimensions();
+        };
+    })
 });
 
 function grid(size){
@@ -31,8 +48,54 @@ function grid(size){
 
     for(let i = 0; i < divisions; i++){
         const division = document.createElement('div');
-        division.style.backgroundColor = 'red';
+        division.setAttribute('class', 'pixel');
+        division.addEventListener('mouseover', colorDivision)
         canvas.insertAdjacentElement('beforeend', division)
     };
 
+};
+
+function dimensions(){
+    const dimension = parseInt(input.value);
+    if(!dimension){
+        BotResponseElement.innerHTML = 'Accurate dimension required';
+    }else if(dimension < 1 || dimension > 100){
+        BotResponseElement.innerHTML = 'Dimension out of range';
+    }else{
+        BotResponseElement.innerHTML = 'Lets Draw!';
+        grid(dimension);
+        resetDivisionBg();
+    };
+};
+
+const defaultColorElement = document.querySelector('.js-color-black')
+const randomColorElement = document.querySelector('.js-color-random');
+
+defaultColorElement.addEventListener('click', () => {
+    setColor('black');
+});
+
+randomColorElement.addEventListener('click', () => {
+    setColor('random');
+});
+
+function setColor(colorChoice){
+    color = colorChoice;
+};
+
+function colorDivision(){
+    if(color === 'random'){
+        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    }else{
+        this.style.backgroundColor = 'black';
+    };
+};
+
+resetDivisionBgElement.addEventListener('click', resetDivisionBg)
+
+function resetDivisionBg(){
+    const divisions = document.querySelectorAll('.pixel');
+    divisions.forEach((item) => {
+        item.style.backgroundColor = '#fff';
+    })
 };
